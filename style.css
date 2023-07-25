@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(7, 105, 134);
+}
+body{
+    background-image: url(./img/bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+}
+.container{
+    
+    display: grid;
+    justify-content: center;
+    margin: 80px;
+    align-items: center;
+    padding: 20px;
+    
+}
+.input-container{
+    padding-top: 50px;
+    
+    display: flex;
+ 
+}
+#input{
+    border-width: 1px;
+    padding: 15px;
+    border-radius: 15px;
+    border:10px thin  ;
+    border-color: rgb(102, 196, 243);
+    border-style:ridge;
+    background: none;
+   width: 250px;
+   height: 30px;
+   outline: none;
+   font-size: 15px;
+   transition: transform 0.3s;
+}
+
+#input:hover{
+    transform: scale(1.1);
+}
+img{
+    width: 35px;
+    height: 35px;
+   cursor: pointer;
+   transition: transform 0.3s;
+}
+img:hover {
+    transform: scale(1.2); 
+  }
+.img{
+    margin-left: 15px;
+}
+
+
+
+
+
+#weather-data{
+    display: grid;
+    justify-content:flex-start;
+    width: 25vw;
+    margin-left: 39%;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid transparent;
+    background-color: rgb(240, 245, 248);
+   
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+    outline: none;    
+    display: none;
+   
+}
+
+p{
+    padding: 20px;
+    font-size: 20px;
+}
+
+#error-message{
+    color: red;
+}
